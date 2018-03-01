@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-xunfeiListenSpeaking",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-xunfeiListenSpeaking",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidong0822/cordova-plugin-startpage.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidong0822/cordova-plugin-startpage/issues"
+  },
+  "homepage": "https://github.com/zidong0822/cordova-plugin-startpage#readme"
+}
