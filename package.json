@@ -18,7 +18,7 @@
     "cordova-android",
     "cordova-ios"
   ],
-  "author": "",
+  "author": "harvey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zidong0822/cordova-plugin-IFlyspeech/issues"
