@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zidong0822/cordova-plugin-startpage.git"
+    "url": "git+https://github.com/zidong0822/cordova-plugin-IFlyspeech.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -21,7 +21,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zidong0822/cordova-plugin-startpage/issues"
+    "url": "https://github.com/zidong0822/cordova-plugin-IFlyspeech/issues"
   },
-  "homepage": "https://github.com/zidong0822/cordova-plugin-startpage#readme"
+  "homepage": "https://github.com/zidong0822/cordova-plugin-IFlyspeech#readme"
 }
