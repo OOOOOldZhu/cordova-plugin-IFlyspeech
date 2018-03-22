@@ -30,8 +30,8 @@
     cordova plugin add /Users/z/WebstormProjects/cordova-plugin-xunfeiListenSpeaking
 #
 6,
-    //在适当的位置添加以下代码，开始语音识别`
-    document.addEventListener("deviceready", onDeviceReady, false);
+    //在适当的位置添加以下代码，开始语音识别
+  `document.addEventListener("deviceready", onDeviceReady, false);
                 function onDeviceReady() {
                     //参数1: 成功回调方法
                     //参数2:失败回调方法（ios没有失败回调方法）
@@ -44,9 +44,7 @@
                         console.log('error=', error);
                         //reject(error);
                     }, true, false);
-
-                }
-                `
+     }`
 #
 7,cordova build android
 #
