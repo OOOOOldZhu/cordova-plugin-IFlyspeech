@@ -1,8 +1,8 @@
 var exec = require('cordova/exec');
 
 var xunfeiListenSpeaking = {
-	startListen:function (success,error,isShowDialog,isShowPunc){
-		exec(success,error,"XunfeiListenSpeaking","startListen",[isShowDialog,isShowPunc]);
+	startListen:function (success,error,isShowDialog,isShowPunc,isCh){
+		exec(success,error,"XunfeiListenSpeaking","startListen",[isShowDialog,isShowPunc,isCh?'zh_cn':'en_us']);
 	},
 	stopListen:function(){
 		exec(null,null,"XunfeiListenSpeaking","stopListen",[]);

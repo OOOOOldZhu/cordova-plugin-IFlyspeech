@@ -52,6 +52,7 @@ public class XunfeiListenSpeaking extends CordovaPlugin{
         return context.getResources().getIdentifier(idName, type,context.getPackageName());
     }
     private static final int DIALOG_ACTIVIT_CODE = 0;
+    private String language = "en_us";
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 
@@ -72,6 +73,11 @@ public class XunfeiListenSpeaking extends CordovaPlugin{
                 punc = args.getBoolean(1)?"1":"0";
             }catch (Exception e){
                 punc = "1";
+            }
+            try{
+                language = args.getString(2);
+            }catch (Exception e){
+
             }
             if (isShowDialog){
                 Intent intent = new Intent();
@@ -272,7 +278,7 @@ public class XunfeiListenSpeaking extends CordovaPlugin{
 
         String lag = mSharedPreferences.getString("iat_language_preference",
                 "mandarin");
-        if (lag.equals("en_us")) {
+        if (language.equals("en_us")) {
             // 设置语言
             mIat.setParameter(SpeechConstant.LANGUAGE, "en_us");
         } else {
