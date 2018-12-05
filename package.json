@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zidong0822/cordova-plugin-IFlyspeech.git"
+    "url": ""
   },
   "keywords": [
     "ecosystem:cordova",
