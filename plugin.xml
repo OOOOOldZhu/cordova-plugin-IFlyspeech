@@ -12,6 +12,18 @@
             </feature>
         </config-file>
         <source-file src="src/android/xunfeiListenSpeaking.java" target-dir="src/com/microduino/mDesigner" />
+
+        <lib-file src="src/android/sdk/libs/Msc.jar" />
+        <lib-file src="src/android/sdk/libs/Sunflower.jar" />
+
+        <source-file src="src/android/sdk/jniLibs/arm64-v8a/libmsc.so" target-dir="src/main/jniLibs/arm64-v8a" />
+        <source-file src="src/android/sdk/jniLibs/armeabi/libmsc.so" target-dir="src/main/jniLibs/armeabi" />
+        <source-file src="src/android/sdk/jniLibs/armeabi-v7a/libmsc.so" target-dir="src/main/jniLibs/armeabi-v7a" />
+        <source-file src="src/android/sdk/jniLibs/mips/libmsc.so" target-dir="src/main/jniLibs/mips" />
+        <source-file src="src/android/sdk/jniLibs/mips64/libmsc.so" target-dir="src/main/jniLibs/mips64" />
+        <source-file src="src/android/sdk/jniLibs/x86/libmsc.so" target-dir="src/main/jniLibs/x86" />
+        <source-file src="src/android/sdk/jniLibs/x86_64/libmsc.so" target-dir="src/main/jniLibs/x86_64" />
+
     </platform>
 
     <platform name="ios">
