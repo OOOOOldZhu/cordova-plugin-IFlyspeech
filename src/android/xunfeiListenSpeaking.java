@@ -58,6 +58,7 @@ public class xunfeiListenSpeaking extends CordovaPlugin {
     protected void pluginInitialize() {
         super.pluginInitialize();
         context = cordova.getActivity();
+        // 5b95e51f
         String key = context.getString(getId("app_id", "string"));
         String s = SpeechConstant.APPID + "=" + key;
         SpeechUtility.createUtility(context, s);
@@ -77,66 +78,63 @@ public class xunfeiListenSpeaking extends CordovaPlugin {
 
         //开始听写
         if (action.equals("startListen")) {
+//            boolean isShowDialog;
+//            try {
+//                isShowDialog = args.getBoolean(0);
+//            } catch (Exception e) {
+//                isShowDialog = true;
+//            }
+//            String punc;
+//            try {
+//                punc = args.getBoolean(1) ? "1" : "0";
+//            } catch (Exception e) {
+//                punc = "1";
+//            }
+//            if (isShowDialog) {
+//                Intent intent = new Intent();
+//                intent.setClass(context, XunfeiDialogActivity.class);
+//                intent.putExtra("isShowDialog", isShowDialog);
+//                intent.putExtra("punc", punc);
+//                cordova.startActivityForResult(this, intent, DIALOG_ACTIVIT_CODE);
+//            } else {
+//                startListenWidthNotDialog(punc);
+//            }
 
-//            boolean isShowDialog = args.getBoolean(0);
-
-//            String punc = args.getBoolean(1)?"1":"0";
-            boolean isShowDialog;
-            try {
-                isShowDialog = args.getBoolean(0);
-            } catch (Exception e) {
-                isShowDialog = true;
-            }
-            String punc;
-            try {
-                punc = args.getBoolean(1) ? "1" : "0";
-            } catch (Exception e) {
-                punc = "1";
-            }
-            if (isShowDialog) {
-                Intent intent = new Intent();
-                intent.setClass(context, XunfeiDialogActivity.class);
-                intent.putExtra("isShowDialog", isShowDialog);
-                intent.putExtra("punc", punc);
-                cordova.startActivityForResult(this, intent, DIALOG_ACTIVIT_CODE);
-            } else {
-                startListenWidthNotDialog(punc);
-            }
-
-
+            Toast.makeText(context, "aaaaaaaaaaa", Toast.LENGTH_SHORT).show();
+            callbackContext.success("success");
             return true;
         }
 
-        //停止听写
-        if (action.equals("stopListen")) {
-            stopListen();
-            return true;
-        }
-
-
-        //开始听写
-        if (action.equals("startSpeak")) {
-            mToast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
-            String speakMessage = args.getString(0).trim();
-            startSpeak(speakMessage);
-            return true;
-        }
-        //停止说话
-        if (action.equals("stopSpeak")) {
-            stopSpeak();
-            return true;
-        }
-
-        //暂停
-        if (action.equals("pauseSpeaking")) {
-            pauseSpeaking();
-            return true;
-        }
-        //继续
-        if (action.equals("resumeSpeaking")) {
-            resumeSpeaking();
-            return true;
-        }
+//        //停止听写
+//        if (action.equals("stopListen")) {
+//            stopListen();
+//            return true;
+//        }
+//
+//
+//        //开始听写
+//        if (action.equals("startSpeak")) {
+//            mToast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
+//            String speakMessage = args.getString(0).trim();
+//            startSpeak(speakMessage);
+//            return true;
+//        }
+//        //停止说话
+//        if (action.equals("stopSpeak")) {
+//            stopSpeak();
+//            return true;
+//        }
+//
+//        //暂停
+//        if (action.equals("pauseSpeaking")) {
+//            pauseSpeaking();
+//            return true;
+//        }
+//        //继续
+//        if (action.equals("resumeSpeaking")) {
+//            resumeSpeaking();
+//            return true;
+//        }
 
         return false;
     }
